@@ -1,0 +1,240 @@
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Skiza</title>  
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            
+          @import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Bubblegum+Sans|Caveat+Brush|Chewy|Lobster+Two');
+
+          body {
+              width: 100%;
+              height: 100%;
+          }
+
+          html {
+              width: 100%;
+              height: 100%;
+          }
+
+          /* ===== NAVIGATION ======*/
+          .navbar {
+              border: 0;
+              z-index: 9999;
+              letter-spacing: 4px;
+
+          }
+          .logo {
+              display: block;
+              height: auto;
+              width: 52px;
+              padding-top: 13px;
+              margin-right: 15px;
+          }
+
+          .navbar-brand>img {
+          height: 100%;
+          padding: 15px; /* firefox bug fix */
+          width: auto;
+          }
+          .navbar .nav > li > a {
+          line-height: 50px;
+          }
+
+          .navbar-header h1 {
+              letter-spacing: 1px;
+              color: black !important;
+              font-family: 'Lobster Two', cursive;
+          }
+
+          .navbar li a, .navbar {
+              color: black !important;
+              font-size: 14px;
+              font-family: cursive;
+              transition: all 0.6s 0s;
+          }
+
+          .navbar-toggle {
+              background-color: transparent !important;
+              border: 0;
+          }
+
+          .navbar-nav li a:hover, .navbar-nav li.active a {
+              color:  #0ed3be  !important;
+          }
+
+          .text-container {
+
+              margin-top: 100px;
+              margin-bottom: 50px;
+              margin-left: auto;
+              margin-right: auto;
+          }  
+          .text-container h1 {
+          font: 600 2.5rem/3rem "Montserrat", sans-serif;
+        }     
+          .header {
+              
+              height: 500px;
+          }
+
+          .header .header-content {
+              padding-top: 20rem;
+              padding-bottom: 2.125rem;
+              text-align: center;
+          }
+
+          .header h1 {
+              margin-bottom: 0.5rem;
+          }
+
+          .header .p-large {
+              margin-bottom: 2rem;
+          }
+
+          .header .btn-solid-lg {
+              margin-right: 0.5rem;
+              margin-bottom: 1.25rem;
+          }
+          .btn-solid-lg {
+              display: inline-block;
+              padding: 1.6rem 3.2rem 1.6rem 3.2rem;
+              border: 0.125rem solid #0ed3be ;
+              border-radius: 0.55rem;
+              background-color: #0ed3be ;
+              color: #fff;
+              font: 700 1.5rem "Montserrat", sans-serif;
+              text-decoration: none;
+              transition: all 0.2s;
+          }
+
+          .btn-solid-lg:hover {
+              background-color: transparent;
+              color: #0ed3be ;
+              text-decoration: none;
+          }
+
+          .btn-solid-lg_sec {
+              display: inline-block;
+              padding: 1.5rem 3.5rem 1.5rem 3.5rem;
+              border: 0.125rem solid #393637 ;
+              border-radius: 0.55rem;
+              background-color: transparent;
+              color: #393637;
+              font: 700 1.5rem "Montserrat", sans-serif;
+              text-decoration: none;
+              transition: all 0.2s;
+          }
+
+          .btn-solid-lg_sec:hover {
+              background-color: #393637;
+              color: #fff ;
+              text-decoration: none;
+          }
+          .btn-start {
+              display: inline-block;
+              padding: .75rem 1.75rem 0.75rem 1.75rem;
+              border: 0.125rem solid #0ed3be ;
+              border-radius: 0.55rem;
+              background-color: #0ed3be;
+              color: #fff;
+              font: 700 1.5rem "Montserrat", sans-serif;
+              text-decoration: none;
+              transition: all 0.2s;
+          }
+
+          .btn-start:hover {
+              background-color: #fff;
+              color: #0ed3be ;
+              text-decoration: none;
+          }
+
+          .btn-stop {
+              display: inline-block;
+              padding: .75rem 1.75rem 0.75rem 1.75rem;
+              border: 0.125rem solid #d32c0e  ;
+              border-radius: 0.55rem;
+              background-color: #d32c0e ;
+              color:  #fff ;
+              font: 700 1.5rem "Montserrat", sans-serif;
+              text-decoration: none;
+              transition: all 0.2s;
+          }
+
+          .btn-stop:hover {
+              background-color:  #fff ;
+              color: #d32c0e ;
+              text-decoration: none;
+          }
+          .card-body{
+              flex: 1 1 auto;
+              padding: 1.25rem;
+          }
+      </style>
+    </head>
+    <body>
+  
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse"
+                      data-target="#myNavbar">
+                  <span class="glyphicon glyphicon-menu-hamburger"></span>
+              </button>
+            <a href="\">
+                <div class="navbar-left logo"> 
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"enable-background="new -25 -25 300 300" viewBox="-25 -25 300 250" xml:space="preserve">
+                        <path fill="#333" d="M112.455 124.635c-4.173-.324-7.818 2.792-8.143 6.963-.384 4.91-3.407 16.33-23.147 16.33-12.803 0-23.218-10.417-23.218-23.219s10.415-23.218 23.218-23.218c18.215 0 22.235 9.667 23.01 15.429.557 4.146 4.364 7.056 8.519 6.499 4.146-.557 7.057-4.371 6.5-8.518-2.319-17.248-16.337-28.093-36.711-28.543.817-.261 1.626-.478 2.423-.645 13.567-2.818 22.448 1.804 22.928 2.063 3.628 2.021 8.215.744 10.273-2.875 2.068-3.638.796-8.264-2.841-10.332-.561-.317-13.929-7.743-33.442-3.691-3.507.728-7.048 2.016-10.506 3.734 1.382-.902 2.835-1.773 4.361-2.61 12.814-7.023 26.098-9.043 26.36-9.082 4.136-.594 7.013-4.428 6.424-8.566-.59-4.144-4.426-7.021-8.568-6.435-.639.091-15.844 2.324-31.092 10.574-8.631 4.669-15.58 10.32-20.766 16.826 8.334-17.135 24.799-24.155 25.9-24.607 3.868-1.565 5.744-5.968 4.19-9.845-1.558-3.884-5.972-5.768-9.854-4.211-.52.208-12.869 5.249-23.694 17.12-7.034 7.712-14.366 19.397-16.089 35.539-2.216 10.324-8.381 30.51-12.574 37.284-5.954 9.619-21.528 18.781-21.528 18.781s5.999 38.184 33.717 43.796c0 0 15.54-22.016 30.412-20.894 14.873 1.123 28.851-1.263 42.887-9.407.026-.017.049-.03.075-.046 10.42-5.006 17.013-14.17 17.938-26.054C119.744 128.605 116.627 124.961 112.455 124.635zM221.648 62.209c0 0-12.99 23.01-27.862 21.888-14.874-1.122-31.399.27-45.437 8.413-.026.016-.048.029-.076.046-10.418 5.007-17.011 14.17-17.938 26.053-.324 4.173 2.793 7.819 6.964 8.144 4.173.324 7.818-2.793 8.144-6.965.384-4.909 3.405-16.329 23.147-16.329 12.803 0 23.218 10.417 23.217 23.22.001 12.802-10.414 23.217-23.217 23.217-18.216 0-22.236-9.665-23.01-15.428-.557-4.146-4.363-7.057-8.519-6.5-4.147.558-7.057 4.371-6.5 8.519 2.319 17.247 16.337 28.093 36.711 28.542-.817.263-1.626.479-2.425.645-13.565 2.819-22.446-1.803-22.927-2.061-3.628-2.022-8.214-.744-10.272 2.874-2.068 3.637-.796 8.263 2.841 10.331.561.318 13.93 7.744 33.442 3.691 3.507-.728 7.046-2.016 10.504-3.734-1.38.903-2.832 1.772-4.36 2.609-12.813 7.023-26.097 9.045-26.358 9.083-4.139.596-7.014 4.428-6.425 8.566.588 4.143 4.425 7.021 8.567 6.435.641-.091 15.845-2.322 31.093-10.573 8.632-4.671 15.578-10.323 20.765-16.829-8.333 17.138-24.798 24.157-25.899 24.609-3.87 1.565-5.746 5.968-4.19 9.844 1.557 3.885 5.971 5.768 9.853 4.212.521-.21 12.87-5.25 23.695-17.12 7.034-7.712 14.365-19.396 16.089-35.539 2.217-10.323 8.039-31.441 12.234-38.218 5.955-9.619 22.445-17.864 22.445-17.864S249.367 67.821 221.648 62.209z"/>
+                    </svg>
+                </div>
+                <h1 class="brand brand-name navbar-left"><div class ="navbar-left">Skiza</h1>  
+                </div> 
+            </a>  
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="\">Home</a></li>
+                    <li><a href="\admin">Contact</a></li>
+                </ul>
+            </div>
+            
+      </div>
+  </nav>
+  {% with messages = get_flashed_messages(with_categories=true) %} 
+  {% if messages %} 
+    {% for category, message in messages %} 
+    {% if category == 'error' %}
+    <div class="alert alert-danger alter-dismissable fade show" role="alert">
+      {{ message }}
+      <button type="button" class="close" data-dismiss="alert">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    {% else %}
+    <div class="alert alert-success alter-dismissable fade show" role="alert">
+      {{ message }}
+      <button type="button" class="close" data-dismiss="alert">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    {% endif %} 
+    {% endfor %} 
+  {% endif %} 
+  {% endwith %}
+
+  <div class="container">{% block content %} {% endblock %}</div>
+
+  <footer class="text-center text-lg-start" style="background-color: #f8f8f8;font-family: 'Lobster Two', cursive; font-size: 16px; padding-top: 1rem; padding-bottom: 1rem; position: fixed; bottom: 0%; left: 0%;right: 0%;">
+    <!-- Copyright -->
+    <div class="p-3 text-center text-dark" >
+      © 2021 Copyright:
+      <a class="text-dark" style="color: #0ed3be;" href="#">Skiza.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  
+</body>
+</html>
