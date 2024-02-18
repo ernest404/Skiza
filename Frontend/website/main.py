@@ -2,7 +2,7 @@ from flask import  Flask, Response, render_template
 # from flask_login import login_user, login_required, logout_user, current_user
 import cv2, pickle, sqlite3, pyttsx3
 import numpy as np
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 from threading import Thread
 app = Flask(__name__)
 
